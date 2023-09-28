@@ -7,7 +7,6 @@
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" }
   ],
-  "tailwindCSS.experimental.configFile": "./packages/config/tailwind/index.ts",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "[properties]": {
@@ -18,5 +17,13 @@
   },
   "[ignore]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
   }
 }
