@@ -1,10 +1,12 @@
-import { UserButton } from "@clerk/nextjs";
+import { SignIn } from "@clerk/nextjs";
 
 export default function HomePage() {
   return (
     <main className="flex h-screen flex-1 flex-col items-center justify-center bg-gray-800">
+      <div>
+        <SignIn />
+      </div>
       <h1 className="text-7xl text-gray-300">👋 Hello!</h1>
-      <UserButton af/>
     </main>
   );
 }

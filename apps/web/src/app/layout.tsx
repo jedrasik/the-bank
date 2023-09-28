@@ -2,8 +2,8 @@ import "~/styles/globals.css";
 
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-
-import { ThemeProvider } from "~/components/ThemeProvider";
+// import { ThemeProvider } from "~/components/ThemeProvider";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -30,9 +30,7 @@ export default function Layout(props: { children: React.ReactNode }) {
       suppressHydrationWarning
     >
       <body suppressHydrationWarning={true}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {props.children}
-        </ThemeProvider>
+        <ClerkProvider>{props.children}</ClerkProvider>
       </body>
     </html>
   );
