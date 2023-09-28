@@ -31,10 +31,10 @@ export const users = mysqlTable(
   "users",
   {
     id: serial("id").primaryKey(),
-    clerkId: varchar("clerk_id", { length: 256 }).notNull().unique(),
+    clerkId: varchar("clerk_id", { length: 256 }).notNull(),
     firstName: varchar("first_name", { length: 256 }),
     lastName: varchar("last_name", { length: 256 }),
-    imageUrl: varchar("image_url", { length: 256 }).notNull().unique(),
+    imageUrl: varchar("image_url", { length: 256 }).notNull(),
     createdAt: timestamp("created_at").defaultNow(),
   },
   (t) => ({

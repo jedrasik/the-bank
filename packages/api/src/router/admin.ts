@@ -1,3 +1,4 @@
+import { getTransactions } from "@the-bank/db";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
