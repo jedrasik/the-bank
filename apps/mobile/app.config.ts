@@ -29,9 +29,9 @@ const defineConfig: ExpoConfig = {
     },
   },
   extra: {
-    eas: {
-      projectId: "677df07c-8718-4abb-8a30-d86f985f47fb", // comment
-    },
+    // eas: {
+    //   projectId: "677df07c-8718-4abb-8a30-d86f985f47fb", // comment
+    // },
   },
   experiments: {
     tsconfigPaths: true,
